@@ -1,0 +1,83 @@
+cloud-architecture-diagram
+
+title GCP Hybrid Connectivity to Multiple VPC or Shared VPC
+
+OnPremises [icon: router, label: "OKC"] {
+  DallasVM [icon: monitor, label: "VM"]
+  OnPremRouter [icon: router, label: "Router"]
+}
+
+Equinix [icon: building, label: "Equinix Ashburn"]
+
+Equinix2 [icon: building, label: "Equinix Elk Grove"]
+
+NonProdHostProject [icon: gcp-vpc, label: "Non-Prod Host Project"] {
+NonProdSharedVPCProject [icon: icon gcp-vpc, label: "Non-Prod Shared VPC"]{
+USCentralRegion [label: us-central1]{
+  CloudRouter1 [icon: gcp-cloud-router, label: "Cloud Router1 (us-central1)"]
+}
+USEastregion [label: us-east-1]{
+  CloudRouter2 [icon: gcp-cloud-router, label: "Cloud Router2 (us-east1)"]
+}
+}
+}
+
+ProdHostProject [icon: gcp-vpc, label: "Prod Host Project"] {
+  ProdSharedVPCProject [icon: icon gcp-vpc, label: "Prod Shared VPC"]{
+  USCentralRegion2 [label: us-central1]{
+  CloudRouter3 [icon: gcp-cloud-router, label: "Cloud Router3 (us-central1)"]
+}
+USEastregion2 [label: us-east-1]{
+  CloudRouter4 [icon: gcp-cloud-router, label: "Cloud Router4 (us-east1)"]
+}
+}
+}
+
+ManagedServicesProject [icon: gcp-vpc, label: "Managed Services"]{
+  
+}
+ServiceProject1VPC [icon: gcp-vpc, label:Service Project 1]{
+ServiceProject1 [icon: gcp-compute-engine, label: "GCE1 (Service Project 1)"]
+}
+
+ServiceProject2VPC [icon: gcp-vpc, label:Service Project 2]{
+ServiceProject2 [icon: gcp-compute-engine, label: "GCE1 (Service Project 2)"]
+GoogleAPIs [label: GoogleAPIs]
+}
+
+ManagedServicesProject2 [icon: gcp-vpc, label: "Managed Services"]{
+  
+}
+ServiceProject3VPC [icon: gcp-vpc, label:Service Project 3]{
+ServiceProject3 [icon: gcp-compute-engine, label: "GCE3 (Service Project 3)"]
+}
+ServiceProject4VPC [icon: gcp-vpc, label:Service Project 4]{
+ServiceProject4 [icon: gcp-compute-engine, label: "GCE4 (Service Project 4)"]
+GoogleAPIs2 [label: GoogleAPIs]
+}
+
+
+// Connections
+DallasVM > OnPremRouter
+OnPremRouter > Equinix
+OnPremRouter > Equinix2
+Equinix --> CloudRouter1:VLAN Attachment
+Equinix --> CloudRouter2
+Equinix > CloudRouter3
+Equinix > CloudRouter4
+
+Equinix2 --> CloudRouter1
+Equinix2 --> CloudRouter2
+Equinix2 > CloudRouter3
+Equinix2 > CloudRouter4
+
+NonProdSharedVPCProject > ManagedServicesProject: VPC Peering
+USCentralRegion > ServiceProject1VPC: Subnet 1
+USEastregion > ServiceProject2VPC: Subnet 2
+
+ProdSharedVPCProject > ManagedServicesProject2: VPC Peering
+USCentralRegion2 > ServiceProject3VPC: Subnet 3
+USEastregion2 > ServiceProject4VPC: Subnet 4
+
+// VPC Peering
+
