@@ -1,0 +1,96 @@
+cloud-architecture-diagram
+
+title Enterprise Network Architecture Overview
+
+// 1. Equinix Facilities (with interconnections, DC, and remote office links)
+Equinix Facilities [icon: building, color: blue] {
+  Equinix NY [icon: map-pin, label: "Equinix NY"]
+  Equinix SF [icon: map-pin, label: "Equinix SF"]
+}
+
+// 2. Data Centers (standalone, connect to Equinix)
+Data Centers [icon: server, color: orange] {
+  Data Center East [icon: server, label: "DC East"]
+  Data Center West [icon: server, label: "DC West"]
+}
+
+// 3. Cloud Providers (each with redundant links)
+Cloud Providers [icon: cloud, color: purple] {
+  AWS [icon: aws-cloud] {
+    AWS Direct Connect 1 [icon: aws-direct-connect, label: "Direct Connect 1"]
+    AWS Direct Connect 2 [icon: aws-direct-connect, label: "Direct Connect 2"]
+  }
+  Azure [icon: azure-cloud] {
+    Azure ExpressRoute 1 [icon: azure-expressroute, label: "ExpressRoute 1"]
+    Azure ExpressRoute 2 [icon: azure-expressroute, label: "ExpressRoute 2"]
+  }
+  GCP [icon: gcp-cloud] {
+    GCP Interconnect 1 [icon: gcp-interconnect, label: "Interconnect 1"]
+    GCP Interconnect 2 [icon: gcp-interconnect, label: "Interconnect 2"]
+  }
+}
+
+// 4. Remote Offices (grouped, each connects to Equinix)
+Remote Offices [icon: briefcase, color: green] {
+  Remote Office NY [icon: map-pin, label: "NY Office"]
+  Remote Office SF [icon: map-pin, label: "SF Office"]
+  Remote Office London [icon: map-pin, label: "London Office"]
+}
+
+// 5. Security Layer (firewalls, encryption, segmentation)
+Security Layer [icon: shield, color: red] {
+  Equinix Firewall [icon: shield, label: "Equinix FW"]
+  DC Firewall [icon: shield, label: "DC FW"]
+  Cloud Firewall [icon: shield, label: "Cloud FW"]
+  Encryption [icon: lock]
+  Segmentation [icon: divide]
+}
+
+// 6. Monitoring & Management (standalone, connects to all)
+Monitoring & Management [icon: activity, color: yellow] {
+  CloudWatch [icon: aws-cloudwatch]
+  Azure Monitor [icon: azure-monitor]
+  Stackdriver [icon: gcp-stackdriver]
+  Equinix Portal [icon: monitor, label: "Equinix Portal"]
+  Third-Party Monitoring [icon: bar-chart-2]
+}
+
+// 7. High Availability & Redundancy (design principle, not physical)
+High Availability [icon: repeat, color: gray] {
+  Active-Passive Paths [icon: shuffle]
+  Redundant Links [icon: link-2]
+}
+
+// 8. Future Expansion (placeholder)
+Future Expansion [icon: plus-circle, color: gray]
+
+// --- Uniqueness Check ---
+// All node names are unique due to group prefixes or unique labels.
+
+// --- Connections ---
+
+// Equinix Facilities interconnect (redundant)
+Equinix NY <---> Equinix SF: redundant fiber [color: blue]
+
+// Data Centers connect redundantly to both Equinix facilities
+Data Center East <---> Equinix NY: redundant fiber [color: orange]
+Data Center East <---> Equinix SF: redundant fiber [color: orange]
+Data Center West <---> Equinix NY: redundant fiber [color: orange]
+Data Center West <---> Equinix SF: redundant fiber [color: orange]
+
+// Cloud Providers connect redundantly to Equinix
+AWS Direct Connect 1 <---> Equinix NY: dedicated circuit [color: purple]
+AWS Direct Connect 2 <---> Equinix SF: dedicated circuit [color: purple]
+Azure ExpressRoute 1 <---> Equinix NY: dedicated circuit [color: purple]
+Azure ExpressRoute 2 <---> Equinix SF: dedicated circuit [color: purple]
+GCP Interconnect 1 <---> Equinix NY: dedicated circuit [color: purple]
+GCP Interconnect 2 <---> Equinix SF: dedicated circuit [color: purple]
+
+// Remote Offices connect to Equinix (single links)
+Remote Office NY --> Equinix NY: MPLS/fiber [color: green]
+Remote Office SF --> Equinix SF: MPLS/fiber [color: green]
+Remote Office London --> Equinix NY: MPLS/fiber [color: green]
+
+// Security Layer overlays (firewalls at edges)
+Equinix Firewall --> Equinix NY
+Equinix Firewall --> Equinix SF
