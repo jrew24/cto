@@ -1,0 +1,35 @@
+flowchart-diagram
+
+title Wide Area Network Roadmap Flow Chart
+direction right
+
+// Groups and nodes
+Start Roadmap [shape: oval, color: lightblue, icon: globe]
+
+"Phase 1 (1-3 Years)" [color: blue, icon: calendar] {
+  Deploy Remote Office Internet Circuits [icon: wifi, color: lightblue]
+  Retire MPLS [icon: x-square, color: orange]
+  Deploy SASE Solution to Remote Offices [icon: shield, color: green]
+}
+
+"Phase 2 (4-6 Years)" [color: purple, icon: calendar] {
+  Virtualize SDWAN Head Ends [icon: server, color: purple]
+  Split Tunnel SaaS and Other Internet Traffic [icon: cloud, color: yellow]
+}
+
+"Phase 3 (7-10 Years)" [color: teal, icon: calendar] {
+  Move All Traffic to Vendor Managed SASE [icon: shield, color: teal]
+  Create Backend Connectivity to Data Centers [icon: database, color: teal]
+}
+
+End Roadmap [shape: oval, color: lightgreen, icon: check-square]
+
+// Relationships
+Start Roadmap > Deploy Remote Office Internet Circuits
+Deploy Remote Office Internet Circuits > Retire MPLS
+Retire MPLS > Deploy SASE Solution to Remote Offices
+Deploy SASE Solution to Remote Offices > Virtualize SDWAN Head Ends
+Virtualize SDWAN Head Ends > Split Tunnel SaaS and Other Internet Traffic
+Split Tunnel SaaS and Other Internet Traffic > Move All Traffic to Vendor Managed SASE
+Move All Traffic to Vendor Managed SASE > Create Backend Connectivity to Data Centers
+Create Backend Connectivity to Data Centers > End Roadmap
