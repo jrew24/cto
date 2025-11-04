@@ -1,8 +1,6 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/SG4Hrk40ijPatGzhFTiF" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+<p><a target="_blank" href="https://app.eraser.io/workspace/m9lr6laNQdGwgLtLlLPf" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
 
 
-
-I am testing the pull feature.
 
 # Technical Design Document: Enterprise Network Architecture
 ## 1. Introduction
@@ -133,12 +131,10 @@ Scalability considerations (bandwidth, sites, cloud providers)
 
 
 
-
-
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Equinix Hub Diagram-Enterprise Network Architecture Overview-1.eraserdiagram" data-element-id="xtvnB_CEgKZYCwdU6_vpF"><img src="/.eraser/SG4Hrk40ijPatGzhFTiF___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----145e66e620d30beaacdd890b04c5435f-Enterprise-Network-Architecture-Overview.png" alt="" data-element-id="xtvnB_CEgKZYCwdU6_vpF" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Equinix Hub Diagram-Enterprise Network Architecture Overview-1.eraserdiagram" data-element-id="hCGHIiPAwzyKPNZrTvrgT"><img src="/.eraser/m9lr6laNQdGwgLtLlLPf___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----b931bcd73bc05300ced43b15c1ce345c-Enterprise-Network-Architecture-Overview.png" alt="" data-element-id="hCGHIiPAwzyKPNZrTvrgT" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
-<!--- Eraser file: https://app.eraser.io/workspace/SG4Hrk40ijPatGzhFTiF --->
+<!--- Eraser file: https://app.eraser.io/workspace/m9lr6laNQdGwgLtLlLPf --->

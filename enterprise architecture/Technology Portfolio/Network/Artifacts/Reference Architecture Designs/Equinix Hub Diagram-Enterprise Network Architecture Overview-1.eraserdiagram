@@ -1,5 +1,7 @@
 cloud-architecture-diagram
 
+cloud-architecture-diagram
+
 title Enterprise Network Architecture Overview
 
 // 1. Equinix Facilities (with interconnections, DC, and remote office links)
@@ -70,7 +72,7 @@ Future Expansion [icon: plus-circle, color: gray]
 // --- Connections ---
 
 // Equinix Facilities interconnect (redundant)
-Equinix NY <---> Equinix SF: redundant fiber [color: blue]
+
 
 // Data Centers connect redundantly to both Equinix facilities
 Data Center East <---> Equinix NY: redundant fiber [color: orange]
