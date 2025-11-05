@@ -1,0 +1,186 @@
+flowchart-diagram
+
+title Network Capability Model
+
+// Level 1 Capabilities
+Asset management [color: blue, icon: briefcase]
+Automation and Orchestration [color:blue, icon:settings]
+Connectivity and Transport [color:blue, icon:link]
+Governance and Compliance [color:blue, icon:shield]
+Network Services [color:blue, icon:globe]
+Observability and Operations [color:blue, icon:activity]
+Resiliency and High Availability [color:blue, icon:refresh-ccw]
+Security and Access Control [color:blue, icon:lock]
+Service Integration and Edge [color:blue, icon:layers]
+
+//Capabilities Asset Management
+//Level 2
+Hardware Lifecycle Management[color: green]
+Software Asset Inventory [color:green]
+CMDB and Asset Discovery [color:green]
+//Level 3 
+Procurement[]
+Deployment[]
+Decommission[]
+License Tracking[]
+Automated Discover and Integration Tools[]
+Labeling and Tagging[]
+Unmanaged and Shadow IT Detection[]
+// Connections
+Asset management > Hardware Lifecycle Management
+Asset management > Software Asset Inventory
+Asset management > CMDB and Asset Discovery
+Hardware Lifecycle Management > Decommission
+Software Asset Inventory> License Tracking
+CMDB and Asset Discovery > Automated Discover and Integration Tools
+
+//Caps Automation
+//Level 2
+Infrastructure as Code[color:green]
+API Driven Network Configuration[color:green]
+Workflow Automation[color:green]
+Policy-Driven Automation[color:green]
+Self-Service Provisioning[color:green]
+//Level 3
+Declarative Configuration and Deployment[]
+CICD Integration[]
+Virtual Testing Environment[]
+Testing and Validation Rules[]
+Routers and Switches[]
+Load Balancers[]
+CDN[]
+DDI[]
+SDWAN[]
+Job Scheduling[]
+Compliance as Code[]
+Centralized Intake[]
+Zero Touch for Physical Assets[]
+DNS[]
+Load Balancing GSLB[]
+Load Balancing L4[]
+Load Balancing L7[]
+//connections
+Automation and Orchestration > Infrastructure as Code
+Automation and Orchestration > API Driven Network Configuration
+Automation and Orchestration > Workflow Automation
+Automation and Orchestration > Policy-Driven Automation
+Automation and Orchestration > Self-Service Provisioning
+Infrastructure as Code > Declarative Configuration and Deployment
+API Driven Network Configuration > Routers and Switches
+Workflow Automation > Job Scheduling
+Policy-Driven Automation > Compliance as Code
+Self-Service Provisioning > Centralized Intake
+
+//Caps Connectivity
+//Level 2
+Network Fabric Management[color:green]
+Cloud Interconnects[color:green]
+Edge Connectivity[color:green]
+Wireless Network Services[color:green]
+
+//Level 3
+Layer 2 Configuration[]
+Layer 3 Configuration[]
+Network Segmentation Layer 2[]
+Network Segmentation Layer 3[]
+Virtual Connectivity[]
+Physical Connectivity[]
+Cellular Connectivity[]
+Satellite Connectivity[]
+Internet Connectivity[]
+MPLS Connectivity[]
+Internet VPN Remote User[]
+Internet VPN B2B[]
+WAN Overlay[]
+SSID and VLAN Configuration[]
+Surveying[]
+End User Monitoring[]
+System Monitoring[]
+Trusted WiFi[]
+Untrusted WiFi[]
+Integration with NAC[]
+
+//Connections
+Connectivity and Transport > Network Fabric Management
+Connectivity and Transport > Cloud Interconnects
+Connectivity and Transport > Edge Connectivity
+Connectivity and Transport > Wireless Network Services
+Network Fabric Management > Layer 2 Configuration
+Cloud Interconnects > Virtual Connectivity 
+Edge Connectivity > Cellular Connectivity
+Wireless Network Services > SSID and VLAN Configuration
+
+//Caps Governance
+//Level 2
+Policy Management[color:green]
+Regulatory Compliance[color:green]
+Risk Management[color:green]
+Audit[color:green]
+FinOps[color:green]
+
+//Level 3
+PII Controls[]
+HIPAA Controls[]
+GDPR Controls[]
+Threat Modeling[]
+System Logging[]
+Audit Logging[]
+Cost Allocation and Tagging[]
+Budget and Forecasting[]
+Chargeback and Showback[]
+Cost Optimization Remediation Tool[]
+
+//Connections
+Governance and Compliance > Policy Management
+Governance and Compliance > Regulatory Compliance
+Governance and Compliance > Risk Management
+Governance and Compliance > Audit
+Governance and Compliance > FinOps
+Policy Management > Policy Definition and Enforcement
+Regulatory Compliance > PII Controls
+Risk Management > Threat Modeling
+Audit > System Logging
+FinOps > Cost Allocation and Tagging
+
+//Caps Network Services
+//Level 2
+Time and Synchronization Services[color:green]
+Address and Naming Services[color:green]
+Traffic Distribution and Optimization[color:green]
+Service Discovery and Resolution[color:green]
+
+//Level 3
+NTP Server Configuration[]
+Time Source Redundancy[]
+Server and Drift Monitorng[]
+DHCP Scope Management[]
+Subnetting and CIDR Planning[]
+DNS Zone Management[]
+Internal DNS Services[]
+External DNS Services[]
+Network L4 Load Balancing[]
+Application L7 Load Balancing[]
+Internal GSLB[]
+External GSLB[]
+DNS based Service Discovery[]
+Dynamic DNS Updates[]
+Service Mesh Integration[]
+
+//Connections
+Network Services > Time and Synchronization Services
+Network Services > Address and Naming Services
+Network Services > Traffic Distribution and Optimization
+Network Services > Service Discovery and Resolution
+Time and Synchronization Services > NTP Server Configuration
+Address and Naming Services > DHCP Scope Management
+Traffic Distribution and Optimization > Network L4 Load Balancing
+Service Discovery and Resolution > DNS based Service Discovery
+
+
+
+
+
+//Caps Observability 
+//Caps Resiliency
+//Caps Security
+//Caps SI and Edge
