@@ -6,7 +6,7 @@
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Capability Model/Network Capability Map-Network Capability Model-1.eraserdiagram" data-element-id="LSY810lWNgh3He5yj2Stu"><img src="/.eraser/g1imC5ePHegmOCodLe30___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----14ee037a8b53fe08449932d6fd8e5328-Network-Capability-Model.png" alt="" data-element-id="LSY810lWNgh3He5yj2Stu" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Capability Model/Network Capability Map-Network Capability Model-1.eraserdiagram" data-element-id="LSY810lWNgh3He5yj2Stu"><img src="/.eraser/g1imC5ePHegmOCodLe30___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----7846c22f37f9548154ada58ab9473e89-Network-Capability-Model.png" alt="" data-element-id="LSY810lWNgh3He5yj2Stu" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/g1imC5ePHegmOCodLe30 --->

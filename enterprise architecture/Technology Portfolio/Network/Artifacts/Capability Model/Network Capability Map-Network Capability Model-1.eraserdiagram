@@ -233,8 +233,39 @@ Incident Management > Alerting and Escalation Policies
 Performance Analytics > Near realtime latency Jitter Throughput metrics and Dashboards
 AIOps > Anomaly Detection and RCA
 
-
-
 //Caps Resiliency
+//Level 2
+Disaster Recovery Planning[color:green]
+MultiRegion and Zone Deployment[color:green]
+Backup and Restore[color:green]
+Fault Tolerance Design[color:green]
+
+//Level 3
+Failover Strategy Design[]
+Georedundancy Setup[]
+Snapshot Storage[]
+Snapshot Scheduling[]
+Restore Automation Tooling[]
+DNS Based Failover[]
+L4 Based LB Failover[]
+L7 Based LB Failover[]
+Application Independent Failover[]
+Private and Public Cloud Failover[]
+DDoS Protection[]
+
+//Connections
+Resiliency and High Availability > Disaster Recovery Planning
+Resiliency and High Availability > MultiRegion and Zone Deployment
+Resiliency and High Availability > Backup and Restore
+Resiliency and High Availability > Fault Tolerance Design
+Disaster Recovery Planning > Failover Strategy Design
+MultiRegion and Zone Deployment > Georedundancy Setup
+Backup and Restore > Snapshot Storage
+Fault Tolerance Design > DNS Based Failover
+
 //Caps Security
+//Level 2
+//Level 3
+//Connections
+
 //Caps SI and Edge
