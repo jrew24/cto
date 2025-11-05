@@ -265,7 +265,52 @@ Fault Tolerance Design > DNS Based Failover
 
 //Caps Security
 //Level 2
+Identity and Access Management[color: green]
+Zero Trust Architecture[color: green]
+Network Security[color:green]
+Data Protection and Encryption[color: green]
+
 //Level 3
+Role Based Access Control[]
+Federated Identity[]
+Microsegmentation[]
+Continuous Authentication[]
+Firewalls[]
+Network Access Control[]
+Access Control Lists[]
+Secure Web Proxy[]
+Key Management Service[]
+Tokenization and Masking[]
+Certificate Management[]
+Encryption at Rest[]
+Encryption in Transit[]
+
 //Connections
+Security and Access Control > Identity and Access Management
+Security and Access Control > Zero Trust Architecture
+Security and Access Control > Network Security
+Security and Access Control > Data Protection and Encryption
+Identity and Access Management > Role Based Access Control
+Zero Trust Architecture > Microsegmentation
+Network Security > Firewalls
+Data Protection and Encryption > Key Management Service
 
 //Caps SI and Edge
+//Level 2
+API Management[color: green]
+Content Delivery and Acceleration[color:green]
+
+//Level 3
+Service Mesh[]
+API Gateway Configuration[]
+CDN Configuration Management[]
+Edge Caching and Invalidation[]
+Encryption Offloading and Cert Management[]
+Web Application Firewall[]
+Bot Detection and Mitigation[]
+
+//Connections
+Service Integration and Edge> API Management
+Service Integration and Edge > Content Delivery and Acceleration
+API Management > Service Mesh
+Content Delivery and Acceleration > CDN Configuration Management
