@@ -176,11 +176,65 @@ Address and Naming Services > DHCP Scope Management
 Traffic Distribution and Optimization > Network L4 Load Balancing
 Service Discovery and Resolution > DNS based Service Discovery
 
-
-
-
-
 //Caps Observability 
+//Level 2
+Network Monitoring[color:green]
+Configuration Management[color:green]
+Network Topolgy Visualization[color:green]
+SLA Monitoring and ALering[color:green]
+Logging[color:green]
+Packet Capture and Network Forensics[color:green]
+Incident Management[color:green]
+Performance Analytics[color:green]
+AIOps[color: green]
+
+//Level 3
+Metric Collection and Dashboards[]
+Configuration DriftDetection and Alerting[]
+Near RealTime Topology Mapping[]
+Layer 2 and 3 Path Visualization[]
+Dependancy Mapping[]
+Change Impact Visualization[]
+Dashboards and Automated Alerting and Reporting[]
+Network Telemetry[]
+System Logging2 []
+Audit Logging2 []
+Netflow[]
+Full Packet Capture[]
+Decoding and Analysis[]
+Storage[]
+Integration with SIEM and SOAR[]
+Alerting and Escalation Policies[]
+Near realtime latency Jitter Throughput metrics and Dashboards[]
+Capacity Planning[]
+Anomaly Detection and RCA[]
+Predictive Alering and Forecasting[]
+Event Correlation[]
+Automated Remediation[]
+Integration with Monitoring Dashboards[]
+
+//Connections
+Observability and Operations > Network Monitoring
+Observability and Operations > Configuration Management
+Observability and Operations > Network Topolgy Visualization
+Observability and Operations > SLA Monitoring and ALering
+Observability and Operations > Logging
+Observability and Operations > Packet Capture and Network Forensics
+Observability and Operations > Incident Management
+Observability and Operations > Performance Analytics
+Observability and Operations > AIOps
+Network Monitoring > Metric Collection and Dashboards
+Configuration Management > Configuration DriftDetection and Alerting
+Network Topolgy Visualization > Near RealTime Topology Mapping
+SLA Monitoring and ALering > Dashboards and Automated Alerting and Reporting
+Logging > Network Telemetry
+Packet Capture and Network Forensics > Netflow
+Incident Management > Alerting and Escalation Policies
+Performance Analytics > Near realtime latency Jitter Throughput metrics and Dashboards
+AIOps > Anomaly Detection and RCA
+
+
+
 //Caps Resiliency
 //Caps Security
 //Caps SI and Edge
