@@ -1,5 +1,6 @@
 cloud-architecture-diagram
 
+
 title GCP Hybrid Connectivity to Multiple VPC or Shared VPC
 
 OnPremises [icon: router, label: "OKC"] {
@@ -80,4 +81,5 @@ USCentralRegion2 > ServiceProject3VPC: Subnet 3
 USEastregion2 > ServiceProject4VPC: Subnet 4
 
 // VPC Peering
+
 
