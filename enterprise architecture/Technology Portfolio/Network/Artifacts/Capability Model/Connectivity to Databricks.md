@@ -104,7 +104,7 @@ _Insert diagram here._
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Capability Model/Connectivity to Databricks-Reference Architectures for Connecting to Databricks SaaS on AWS-1.eraserdiagram" data-element-id="uNGdRBf7m69XVjNIt6Rgm"><img src="/.eraser/nwImFO7UdFY154K48MX3___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----0073978fcf761e30848d8dca3f7fbd67-Reference-Architectures-for-Connecting-to-Databricks-SaaS-on-AWS.png" alt="" data-element-id="uNGdRBf7m69XVjNIt6Rgm" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Capability Model/Connectivity to Databricks-Reference Architectures for Connecting to Databricks SaaS on AWS-1.eraserdiagram" data-element-id="uNGdRBf7m69XVjNIt6Rgm"><img src="/.eraser/nwImFO7UdFY154K48MX3___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----25d5b853848120dc43f35ba197c85e59-Reference-Architectures-for-Connecting-to-Databricks-SaaS-on-AWS.png" alt="" data-element-id="uNGdRBf7m69XVjNIt6Rgm" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/nwImFO7UdFY154K48MX3 --->

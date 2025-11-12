@@ -9,9 +9,11 @@ Private Cloud [color: blue, icon: network] {
 }
 Google Cloud [color: blue, icon: network] {
   GCP Client [icon: gcp]
+  GCP Firewall[icon: firewall]
 }
 Azure Cloud [color: blue, icon: network] {
   Azure Client [icon: azure]
+  Azure Firewall[icon: firewall]
 }
 Elk [color: yellow, icon: network]{
   Colocation Facility [icon: server]
