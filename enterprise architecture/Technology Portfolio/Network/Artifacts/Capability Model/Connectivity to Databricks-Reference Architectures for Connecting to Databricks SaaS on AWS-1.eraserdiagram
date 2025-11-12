@@ -5,6 +5,7 @@ title Reference Architectures for Connecting to Databricks SaaS on AWS
 // Scenario 1: Non-AWS Source via Colocation Facility
 Private Cloud [color: blue, icon: network] {
   Client [icon: client] 
+  PC Firewall[icon: firewall]
 }
 Google Cloud [color: blue, icon: network] {
   GCP Client [icon: gcp]
