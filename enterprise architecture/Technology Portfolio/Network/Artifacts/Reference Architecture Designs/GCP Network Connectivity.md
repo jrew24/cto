@@ -3,7 +3,7 @@
 ### **Summary**
 **Overview**
 
-In this network topology, Interconnect (or HA-VPN) from on-premises (or other clouds) terminates directly into the Shared VPC of each workload environment.
+In this network topology, Interconnect from on-premises (or other clouds) terminates directly into the Shared VPC of each workload environment via Equinix.
 
 This pattern provides hybrid connectivity to:
 
@@ -14,7 +14,7 @@ This pattern provides hybrid connectivity to:
 4. You have many workload VPC Networks that can share a common Interconnect to on-premises or other clouds. In this example, we show only two Shared VPC networks. The same Interconnect can be used by multiple Shared VPC networks. Each shared VPC attaches to the same interconnect via separate VLAN attachments.
 5. You may not require network connectivity between all workload shared VPC Networks. If connectivity is required between the Shared VPC networks, you can consider the options highlighted in [﻿Connecting Multiple VPC Networks](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/enabling-multiple-networks-access-same-attachment)  
 6. You require network connectivity from on-premises to managed services that use Private Services Access (ie VPC Peering) to the workload Shared VPC networks. This pattern allows access to any managed services from on-premises and all workload Shared VPC Networks.
-**Scaling out (larger Number of Shared VPC networks)**
+7. **Scaling out (larger Number of Shared VPC networks)**
 An Interconnect supports a maximum of 16 VLAN attachments. This means we can have a maximum of 16 Shared VPC Networks in this pattern. You can scale out by adding more Interconnects to accomodate additional Shared VPC networks.
 
 
