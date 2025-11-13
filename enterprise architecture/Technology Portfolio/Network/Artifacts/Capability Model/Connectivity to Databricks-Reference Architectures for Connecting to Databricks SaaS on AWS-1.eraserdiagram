@@ -30,6 +30,7 @@ AWS East-2 [color: green, icon: aws-region] {
     East 2 Transit Gateway [icon: aws-transit-gateway]    
     East 2 Trusted AWS VPC [icon: aws-vpc, label: "VPC"]
     East 2 AWS PrivateLink [icon: aws-privatelink, label: "AWS PrivateLink"]
+    East 2 NACL[icon: aws-nacl]
   }
   Databricks Account [icon: aws-account]{
     Databricks VPC [icon: databricks, label: "Databricks Environment"]
@@ -79,7 +80,8 @@ Direct Connect Gateway > East 2 Transit Gateway2
 East 2 Transit Gateway2 > East 2 Trusted AWS VPC2
 East 2 Trusted AWS VPC2 > East 2 AWS PrivateLink2
 East 2 AWS PrivateLink2 > Databricks VPC
-Vendor VPC > East 2 AWS PrivateLink
+East 2 NACL > East 2 AWS PrivateLink
+Vendor VPC > East 2 NACL
 Vendor VPC > East 2 AWS PrivateLink2
 
 Direct Connect Gateway > East 1 Transit Gateway
