@@ -31,7 +31,7 @@
 - Ansible for configuration management.
 - Git for source control and workflow.
 - GitHub for CI/CD automation.
-- Cisco CML for lab and virtualized testing.
+-  Cloud testing vendor for lab and virtualized testing.
 - ServiceNow for change management automation.
 # Approval and Rollback Process
 - Peer review required before production merge.
@@ -46,7 +46,7 @@
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Future Network IaC-Zero Touch Provisioning (ZTP) & IaC Workflow for Cisco Network Devices-1.eraserdiagram" data-element-id="744GERZkRRKgGhq_LRPyK"><img src="/.eraser/nD3Qo1cKL5tOsNeTlU7c___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----bb416fdf7826c62860a02bfb38d20d33-Zero-Touch-Provisioning--ZTP----IaC-Workflow-for-Cisco-Network-Devices.png" alt="" data-element-id="744GERZkRRKgGhq_LRPyK" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Future Network IaC-Zero Touch Provisioning (ZTP) & IaC Workflow for Network Devices-1.eraserdiagram" data-element-id="744GERZkRRKgGhq_LRPyK"><img src="/.eraser/nD3Qo1cKL5tOsNeTlU7c___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----a92e1ccda709e1b3524ac0cf5523ddc6-Zero-Touch-Provisioning--ZTP----IaC-Workflow-for-Network-Devices.png" alt="" data-element-id="744GERZkRRKgGhq_LRPyK" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/nD3Qo1cKL5tOsNeTlU7c --->
