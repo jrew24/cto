@@ -17,11 +17,11 @@ Code Repository & Branching [icon: git, color: orange] {
   Prod Branch[icon: git-branch, label: "Prod Branch"]
 }
 //Test Section
-Static Test Environment[icon: datacenter]{
+Static Test Environment[icon: datacenter, color: purple]{
   Test Ansible [icon: ansible, label: Test Ansible Automation Platform]
 }
 //Prod Section
-Static Prod Environment[icon: datacenter]{
+Static Prod Environment[icon: datacenter, color: red]{
   Prod Ansible [icon: ansible, label: Prod Ansible Automation Platform]
 }
 
@@ -42,7 +42,8 @@ Virtual Test Environment [icon: cloud, color: purple] {
 Production Preparation [icon: clipboard-check, color: yellow] {
   
   ServiceNow Change [icon: servicenow, label: "ServiceNow"]
-  Change Approval [icon: check, label: "Approval"]
+  Change Creation[icon: notebook, label: Change Creation]
+  Change Approval [icon: check, label: "Change Approval"]
 }
 
 Production Deployment [icon: rocket, color: red] {
@@ -52,7 +53,7 @@ Production Deployment [icon: rocket, color: red] {
   
 }
 //Post Production Failure Section
-Failures Actions[icon: ]{
+Failures Actions[color: yellow]{
   RCA Investigation[icon: tesseract]
   New Tests[icon: test-tube]
 }
@@ -94,7 +95,8 @@ Engineer Laptop < Test Feedback: "Fail" [color: red]
 Test Feedback > Prod Branch: Pass [color:green]
 
 //Pre Prod Change Management Connections
-ServiceNow Change > Change Approval
+ServiceNow Change > Change Creation
+Change Creation > Change Approval
 Change Approval > Prod Ansible
 
 //Production Environment Connections
