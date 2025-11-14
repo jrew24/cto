@@ -1,0 +1,112 @@
+cloud-architecture-diagram
+
+title Zero Touch Provisioning (ZTP) & IaC Workflow for Cisco Network Devices
+
+// Nodes and groups
+//Local Dev Section
+Local Development [icon: laptop, color: blue] {
+  Engineer Laptop [icon: user]
+  Ansible Local [icon: ansible]
+  Config as Code [icon: file-text, label: "Day 0/1/2 Configs"]
+}
+//Code Repo Section
+Code Repository & Branching [icon: git, color: orange] {
+  Dev Branch [icon: git-branch, label: Dev Branch]
+  Test Branch [icon: git-branch, label: "Test Branch"]
+  Peer Review [icon: users, label: "Peer Review"]
+  Prod Branch[icon: git-branch, label: "Prod Branch"]
+}
+//Test Section
+Static Test Environment[icon: datacenter]{
+  Test Ansible [icon: ansible, label: Test Ansible Automation Platform]
+}
+//Prod Section
+Static Prod Environment[icon: datacenter]{
+  Prod Ansible [icon: ansible, label: Prod Ansible Automation Platform]
+}
+
+//Lab Section
+Lab Environment [icon: flask, color: green] {
+  Lab Ansible [icon: Ansible, label: "Ansible"]
+  Lab Devices [icon: server, label: "Lab Devices"]
+  Initial Testing [icon: check-circle, label: "Initial Testing"]
+  Lab Test Feedback[icon: refresh-cw, label: "Lab Test Feedback"]
+}
+//Virtual Test Section
+Virtual Test Environment [icon: cloud, color: purple] {
+  Cisco CML [icon: cisco, label: "Cisco CML"]
+  Automated Test Cases [icon: check-square, label: "Automated Tests"]
+  Test Feedback [icon: refresh-cw, label: "Test Feedback"]
+}
+
+Production Preparation [icon: clipboard-check, color: yellow] {
+  
+  ServiceNow Change [icon: servicenow, label: "ServiceNow"]
+  Change Approval [icon: check, label: "Approval"]
+}
+
+Production Deployment [icon: rocket, color: red] {
+  Production Devices [icon: server, label: "Prod Devices"]
+  Automated Prod Tests [icon: check-square, label: "Automated Tests"]
+  Prod Feedback [icon: rotate-ccw, label: "Test Feedback"]
+  
+}
+//Post Production Failure Section
+Failures Actions[icon: ]{
+  RCA Investigation[icon: tesseract]
+  New Tests[icon: test-tube]
+}
+Production Closure[icon: clipboard-check, color: yellow]{
+  ServiceNow Closure[icon: servicenow, label: ServiceNow]
+  Ticket Closure [icon: check-circle, label: "Ticket Closure"]
+}
+
+// Connections (workflow left to right)
+//Local Development Connections
+Engineer Laptop > Ansible Local
+Ansible Local > Config as Code
+
+//Code Repo Connections
+Config as Code > Dev Branch
+Dev Branch > Lab Ansible
+Test Branch > Test Ansible
+Peer Review > Prod Branch
+Peer Review > Prod Ansible
+
+//Test Section Connections
+Test Ansible > Cisco CML
+
+//Prod Section Connections
+Prod Ansible > ServiceNow Change
+Prod Ansible> Production Devices
+
+//Lab Environment Connections
+Lab Ansible > Lab Devices
+Lab Devices > Initial Testing
+Initial Testing > Lab Test Feedback
+Engineer Laptop < Lab Test Feedback: "Fail" [color: red]
+Lab Test Feedback > Test Branch: "Pass" [color: green]
+
+//Virtual Test Environment Connections
+Cisco CML > Automated Test Cases
+Automated Test Cases > Test Feedback
+Engineer Laptop < Test Feedback: "Fail" [color: red]
+Test Feedback > Prod Branch: Pass [color:green]
+
+//Pre Prod Change Management Connections
+ServiceNow Change > Change Approval
+Change Approval > Prod Ansible
+
+//Production Environment Connections
+Production Devices > Automated Prod Tests
+Automated Prod Tests > Prod Feedback
+RCA Investigation< Prod Feedback: "Fail"[color:red]
+Prod Feedback > ServiceNow Closure: "Pass"[color: green]
+
+//Failure Actions
+RCA Investigation > New Tests
+Engineer Laptop< New Tests: Fail[color:red]
+//Production Closure Connections
+ServiceNow Closure> Ticket Closure
+
+
