@@ -1,0 +1,94 @@
+cloud-architecture-diagram
+
+title Reference Architectures for Connecting to Databricks SaaS on AWS
+
+// Scenario 1: Non-AWS Source via Colocation Facility
+Private Cloud [color: blue, icon: network] {
+  Client [icon: client] 
+  PC Firewall[icon: firewall]
+}
+Google Cloud [color: blue, icon: network] {
+  GCP Client [icon: gcp]
+  GCP Firewall[icon: firewall]
+}
+Azure Cloud [color: blue, icon: network] {
+  Azure Client [icon: azure]
+  Azure Firewall[icon: firewall]
+}
+Elk [color: yellow, icon: network]{
+  Colocation Facility [icon: server]
+}
+Ash [color: yellow, icon: network]{
+  Colocation Facility2 [icon: server]
+}
+
+Direct Connect Gateway[icon: aws-direct-connect-gateway]
+
+
+AWS East-2 [color: green, icon: aws-region] {
+  Availability Zone 1 [icon:aws-account]{
+    East 2 Transit Gateway [icon: aws-transit-gateway]    
+    East 2 Trusted AWS VPC [icon: aws-vpc, label: "VPC"]
+    East 2 AWS PrivateLink [icon: aws-privatelink, label: "AWS PrivateLink"]
+  }
+  Databricks Account [icon: aws-account]{
+    Databricks VPC [icon: databricks, label: "Databricks Environment"]
+  }
+  Vendor X Account[icon: aws-account]{
+    Vendor VPC [icon: aws-vpc]
+  }
+  Availability Zone 2 [icon:aws-account]{
+    East 2 Transit Gateway2 [icon: aws-transit-gateway]    
+    East 2 Trusted AWS VPC2 [icon: aws-vpc, label: "VPC"]
+    East 2 AWS PrivateLink2 [icon: aws-privatelink, label: "AWS PrivateLink"]
+  }
+}
+
+AWS East-1 [color: green, icon: aws-region] {
+  East 1 Availability Zone 1 [icon:aws-account]{
+    East 1 Transit Gateway [icon: aws-transit-gateway]    
+    East 1 Trusted AWS VPC [icon: aws-vpc, label: "VPC"]
+    East 1 AWS PrivateLink [icon: aws-privatelink, label: "AWS PrivateLink"]
+  }
+  East 1 Databricks Account [icon: aws-account]{
+    Databricks VPC1 [icon: databricks, label: "Databricks Environment"]
+  }
+  East 1 Vendor X Account[icon: aws-account]{
+    Vendor VPC1 [icon: aws-vpc]
+  }
+  East 1 Availability Zone 2 [icon:aws-account]{
+    East 1 Transit Gateway2 [icon: aws-transit-gateway]    
+    East 1 Trusted AWS VPC2 [icon: aws-vpc, label: "VPC"]
+    East 1 AWS PrivateLink2 [icon: aws-privatelink, label: "AWS PrivateLink"]
+  }
+}
+//Connections
+Client > Elk
+Client > Ash
+GCP Client > Elk
+GCP Client > Ash
+Azure Client > Ash
+Azure Client > Elk
+Elk > Direct Connect Gateway
+Ash > Direct Connect Gateway
+Direct Connect Gateway > East 2 Transit Gateway
+East 2 Transit Gateway > East 2 Trusted AWS VPC
+East 2 Trusted AWS VPC > East 2 AWS PrivateLink
+East 2 AWS PrivateLink > Databricks VPC
+Direct Connect Gateway > East 2 Transit Gateway2
+East 2 Transit Gateway2 > East 2 Trusted AWS VPC2
+East 2 Trusted AWS VPC2 > East 2 AWS PrivateLink2
+East 2 AWS PrivateLink2 > Databricks VPC
+Vendor VPC > East 2 AWS PrivateLink
+Vendor VPC > East 2 AWS PrivateLink2
+
+Direct Connect Gateway > East 1 Transit Gateway
+East 1 Transit Gateway > East 1 Trusted AWS VPC
+East 1 Trusted AWS VPC > East 1 AWS PrivateLink
+East 1 AWS PrivateLink > Databricks VPC1
+Direct Connect Gateway > East 1 Transit Gateway2
+East 1 Transit Gateway2 > East 1 Trusted AWS VPC2
+East 1 Trusted AWS VPC2 > East 1 AWS PrivateLink2
+East 1 AWS PrivateLink2 > Databricks VPC1
+Vendor VPC1 > East 1 AWS PrivateLink
+Vendor VPC1 > East 1 AWS PrivateLink2
