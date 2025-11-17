@@ -46,7 +46,7 @@
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Future Network IaC-Zero Touch Provisioning (ZTP) & IaC Workflow for Network Devices-1.eraserdiagram" data-element-id="744GERZkRRKgGhq_LRPyK"><img src="/.eraser/nD3Qo1cKL5tOsNeTlU7c___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----5d7dbd5717f7fabfc2eb9f5f619a6067-Zero-Touch-Provisioning--ZTP----IaC-Workflow-for-Network-Devices.png" alt="" data-element-id="744GERZkRRKgGhq_LRPyK" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Future Network IaC-Zero Touch Provisioning (ZTP) & IaC Workflow for Network Devices-1.eraserdiagram" data-element-id="744GERZkRRKgGhq_LRPyK"><img src="/.eraser/nD3Qo1cKL5tOsNeTlU7c___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----87d10fb0b48edacedad0b41a3504a6e2-Zero-Touch-Provisioning--ZTP----IaC-Workflow-for-Network-Devices.png" alt="" data-element-id="744GERZkRRKgGhq_LRPyK" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/nD3Qo1cKL5tOsNeTlU7c --->

@@ -64,15 +64,12 @@ Production Closure[icon: clipboard-check, color: yellow]{
 
 // Connections (workflow left to right)
 //Local Development Connections
-Engineer Laptop > Ansible Local
-Ansible Local > Config as Code
+Engineer Laptop > Ansible Local > Config as Code
 
 //Code Repo Connections
-Config as Code > Dev Branch
-Dev Branch > Lab Ansible
+Config as Code > Dev Branch > Lab Ansible
 Test Branch > Test Ansible
-Peer Review > Prod Branch
-Peer Review > Prod Ansible
+Peer Review > Prod Branch > Prod Ansible
 
 //Test Section Connections
 Test Ansible > Cisco CML
@@ -92,7 +89,7 @@ Lab Test Feedback > Test Branch: "Pass" [color: green]
 Cisco CML > Automated Test Cases
 Automated Test Cases > Test Feedback
 Engineer Laptop < Test Feedback: "Fail" [color: red]
-Test Feedback > Prod Branch: Pass [color:green]
+Test Feedback > Peer Review: Pass [color:green]
 
 //Pre Prod Change Management Connections
 ServiceNow Change > Change Creation
