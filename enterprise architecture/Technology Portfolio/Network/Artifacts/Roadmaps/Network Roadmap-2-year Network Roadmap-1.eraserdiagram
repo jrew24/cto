@@ -1,0 +1,30 @@
+sequence-diagram
+
+title 2-year Network Roadmap
+autoNumber nested
+
+// Actors (with icons and colors for related groups)
+Q1 2026 [icon: calendar, color: blue]
+Q2 2026 [icon: calendar, color: blue]
+Q3 2026 [icon: calendar, color: blue]
+Q4 2026 [icon: calendar, color: blue]
+Q1 2027 [icon: calendar, color: blue]
+Q2 2027 [icon: calendar, color: blue]
+Q3 2027 [icon: calendar, color: blue]
+Q4 2027 [icon: calendar, color: blue]
+
+// Phase 1: Foundation (Years 1-2)
+Wide Area Network [label: Foundation, icon: layers, color: green] {
+  Q1 2026 > Q2 2026: : Establish secure cloud connectivity
+  Q1 2026 > Q3 2026: Deploy SD-WAN at branch locations
+  Q1 2026 > Q2 2026: Integrate basic network monitoring
+  Q1 2026 > Q4 2027: Submit compliance documentation
+}
+Network Services [label: Foundation, icon: layers, color: red] {
+  Q1 2026 > Q2 2026: : Refresh F5 hardware
+  Q1 2026 > Q3 2026: Research DDI vendors
+  Q1 2026 > Q2 2026: Refresh NTP Servers
+  Q1 2026 > Q4 2027: Submit compliance documentation
+}
+
+
