@@ -46,7 +46,7 @@ This overview is intended for business stakeholders involved in continuity plann
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Ransomeware Recovery-Isolated Environment Disaster Recovery Network Overview-1.eraserdiagram" data-element-id="V72VPMFOH-HsBb9jcolpN"><img src="/.eraser/YN7Nm58jH3ptXU5dvKpz___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----c38b905f72c96d34112dad28b968c086-Isolated-Environment-Disaster-Recovery-Network-Overview.png" alt="" data-element-id="V72VPMFOH-HsBb9jcolpN" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/Ransomeware Recovery-Isolated Environment Disaster Recovery Network Overview-1.eraserdiagram" data-element-id="V72VPMFOH-HsBb9jcolpN"><img src="/.eraser/YN7Nm58jH3ptXU5dvKpz___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----92909aee5def6fd5c238c4ca046b9ea8-Isolated-Environment-Disaster-Recovery-Network-Overview.png" alt="" data-element-id="V72VPMFOH-HsBb9jcolpN" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/YN7Nm58jH3ptXU5dvKpz --->

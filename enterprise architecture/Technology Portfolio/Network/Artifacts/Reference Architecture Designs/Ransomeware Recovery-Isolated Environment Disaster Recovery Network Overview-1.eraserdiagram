@@ -27,7 +27,7 @@ Primary Datacenter A [icon: server, color: blue] {
   }
   Production Environment [icon: lock, color: yellow] {
     Production Rack [icon: server, color: purple, label: Production Rack]{
-      Production ToR [icon: switch]
+      Production TOR [icon: switch]
       Production Servers [icon: server]
     }
     Production Rack 1[icon: server, color: purple, label: Production Rack]{
@@ -43,10 +43,10 @@ Primary Datacenter A [icon: server, color: blue] {
 }
 
 //Connections
-DC1 Spine 1 <> Recovery Spine, Recovery Spine_1
-DC1 Spine 2 <> Recovery Spine, Recovery Spine_1
-DC1 Spine 3 <> Recovery Spine, Recovery Spine_1
-DC1 Spine 4 <> Recovery Spine, Recovery Spine_1
+DC1 Spine 1 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
+DC1 Spine 2 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
+DC1 Spine 3 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
+DC1 Spine 4 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
 Recovery Spine <> Services Recovery TOR 1, Recovery TOR 
 Recovery Spine_1 <> Services Recovery TOR 1, Recovery TOR 
 
