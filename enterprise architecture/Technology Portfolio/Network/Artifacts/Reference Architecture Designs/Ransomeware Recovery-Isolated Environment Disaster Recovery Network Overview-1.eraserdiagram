@@ -1,0 +1,45 @@
+cloud-architecture-diagram
+
+title Isolated Environment Disaster Recovery Network Overview
+
+// Top-level groups for primary sites and isolated environment
+Primary Datacenter A [icon: server, color: blue] {
+
+  DC1 Spine 1 [icon: router, label:Spine]
+  DC1 Spine 2 [icon: router, label:Spine]
+  DC1 Spine 3 [icon: router, label:Spine]
+  DC1 Spine 4 [icon: router, label:Spine]
+  
+  
+
+  Isolated Recovery Environment [icon: lock, color: orange] {
+    Recovery Spine[icon: router]
+    Recovery Rack [icon: server, color: red]{
+      Recovery TOR[icon: switch]
+      Recovery Servers [icon: server]
+    }
+    Recovery Spine_1 [icon: router, label: Recovery Spine]
+    
+  }
+  Production Environment [icon: lock, color: yellow] {
+    Production Rack [icon: server, color: purple, label: Production Rack]{
+      Production ToR [icon: switch]
+      Production Servers [icon: server]
+    }
+    Production Rack 1[icon: server, color: purple, label: Production Rack]{
+      Production TOR 1[icon: switch, label: Production ToR]
+      Production Servers 1[icon: server, label: Production Servers]
+    }
+    Services Rack [icon: server, color: purple, label: Services Leaf]{
+      Services TOR 1[icon: switch, label: Services ToR]
+      Datacenter A Firewall_1 [label: Firewall, icon: firewall]
+    }
+  }
+  
+}
+
+//Connections
+
+
+
+
