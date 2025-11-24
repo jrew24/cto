@@ -43,7 +43,10 @@ Primary Datacenter A [icon: server, color: blue] {
 }
 
 //Connections
+DC1 Spine 1 <> Recovery Spine, Recovery Spine_1
+DC1 Spine 2 <> Recovery Spine, Recovery Spine_1
+DC1 Spine 3 <> Recovery Spine, Recovery Spine_1
+DC1 Spine 4 <> Recovery Spine, Recovery Spine_1
+Recovery Spine <> Services Recovery TOR 1, Recovery TOR 
+Recovery Spine_1 <> Services Recovery TOR 1, Recovery TOR 
 
-
-
-    
