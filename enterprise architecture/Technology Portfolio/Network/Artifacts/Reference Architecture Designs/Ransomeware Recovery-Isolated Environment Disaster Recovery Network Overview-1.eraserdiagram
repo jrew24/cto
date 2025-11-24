@@ -14,6 +14,10 @@ Primary Datacenter A [icon: server, color: blue] {
 
   Isolated Recovery Environment [icon: lock, color: orange] {
     Recovery Spine[icon: router]
+    Services Recovery Rack [icon: server, color: red, label: Services Leaf]{
+      Services Recovery TOR 1[icon: switch, label: Services ToR]
+      Recovery Firewall [label: Firewall, icon: firewall]
+    }
     Recovery Rack [icon: server, color: red]{
       Recovery TOR[icon: switch]
       Recovery Servers [icon: server]
@@ -42,4 +46,4 @@ Primary Datacenter A [icon: server, color: blue] {
 
 
 
-
+    
