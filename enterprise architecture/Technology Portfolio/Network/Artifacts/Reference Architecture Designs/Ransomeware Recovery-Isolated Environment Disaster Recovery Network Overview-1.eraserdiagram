@@ -5,6 +5,10 @@ title Isolated Environment Disaster Recovery Network Overview
 // Top-level groups for primary sites and isolated environment
 Primary Datacenter A [icon: server, color: blue] {
 
+Internet Cloud[icon: cloud]
+
+  DC1 WAN Router 1 [icon: router, label: WAN]
+  DC1 WAN Router 2 [icon: router, label: WAN]
   DC1 Distro 1 [icon: router,label: Distribution]
   DC1 Distro 2 [icon: router,label: Distribution]
     
@@ -28,14 +32,8 @@ Primary Datacenter A [icon: server, color: blue] {
       Production Servers [icon: server, label: Server]
       Production Switch 1[icon: switch, label: Access]
       Production Servers 1[icon: server, label: Server]
-      Production Switch 2[icon: switch, label: Access]
-      Production Servers 2[icon: server, label: Server]
-      Production Switch 3[icon: switch, label: Access]
-      Production Servers 3[icon: server, label: Server]
-      Production Switch 4[icon: switch, label: Access]
-      Production Servers 4[icon: server, label: Server]
   }
-}
+  }
 //Connections 
 //DC1 Spine 1 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
 //DC1 Spine 2 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
