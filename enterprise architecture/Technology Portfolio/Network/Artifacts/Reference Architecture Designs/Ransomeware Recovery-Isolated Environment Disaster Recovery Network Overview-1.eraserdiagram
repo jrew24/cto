@@ -35,5 +35,18 @@ Internet Cloud[icon: cloud]
   }
   }
 //Connections 
-//DC1 Spine 1 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
-//DC1 Spine 2 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
+Internet Cloud - DC1 WAN Router 1, DC1 WAN Router 2
+DC1 WAN Router 1 - DC1 WAN Router 2
+DC1 WAN Router 1 - DC1 Spine 1
+DC1 WAN Router 1 - DC1 Spine 2
+DC1 WAN Router 2 - DC1 Spine 1
+DC1 WAN Router 2 - DC1 Spine 2
+DC1 Spine 1 - DC1 Spine 2
+DC1 Spine 1 - DC1 Distro 1 
+DC1 Spine 1 - DC1 Distro 2
+DC1 Spine 1 - DC1 Isolation Firewall
+DC1 Spine 1 - DC1 Isolation Firewall_1
+DC1 Spine 2 - DC1 Distro 2
+DC1 Spine 2 - DC1 Distro 1
+DC1 Spine 2 - DC1 Isolation Firewall
+DC1 Spine 2 - DC1 Isolation Firewall_1
