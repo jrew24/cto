@@ -5,48 +5,37 @@ title Isolated Environment Disaster Recovery Network Overview
 // Top-level groups for primary sites and isolated environment
 Primary Datacenter A [icon: server, color: blue] {
 
-  DC1 Spine 1 [icon: router, label:Spine]
-  DC1 Spine 2 [icon: router, label:Spine]
-  DC1 Spine 3 [icon: router, label:Spine]
-  DC1 Spine 4 [icon: router, label:Spine]
-  
-  
-
-  Isolated Recovery Environment [icon: lock, color: orange] {
-    Recovery Spine[icon: router]
-    Services Recovery Rack [icon: server, color: red, label: Services Leaf]{
-      Services Recovery TOR 1[icon: switch, label: Services ToR]
-      Recovery Firewall [label: Firewall, icon: firewall]
-    }
-    Recovery Rack [icon: server, color: red]{
-      Recovery TOR[icon: switch]
-      Recovery Servers [icon: server]
-    }
-    Recovery Spine_1 [icon: router, label: Recovery Spine]
+  DC1 Distro 1 [icon: router,label: Distribution]
+  DC1 Distro 2 [icon: router,label: Distribution]
     
+  DC1 Spine 1 [icon: router, label:Core]
+  DC1 Spine 2 [icon: router, label:Core]
+
+  DC1 Isolation Firewall [label: Firewall, icon: firewall]
+  DC1 Isolation Firewall_1[icon: firewall, label: Firewall]
+
+  Revovery Environment_1 [color: orange, icon: lock, label: Recovery Environment] {
+    Recovery Distribution [icon: router,label: Distribution]
+    Recovery Distribution_1 [icon: router,label: Distribution]
+    Recovery Switch_1 [label: Access, icon: switch]
+    Recovery Servers_1 [label: Server, icon: server]
+    Recovery Switch 1_1 [label: Access, icon: switch]
+    Recovery Servers 1_1 [label: Server, icon: server]
   }
-  Production Environment [icon: lock, color: yellow] {
-    Production Rack [icon: server, color: purple, label: Production Rack]{
-      Production TOR [icon: switch]
-      Production Servers [icon: server]
-    }
-    Production Rack 1[icon: server, color: purple, label: Production Rack]{
-      Production TOR 1[icon: switch, label: Production ToR]
-      Production Servers 1[icon: server, label: Production Servers]
-    }
-    Services Rack [icon: server, color: purple, label: Services Leaf]{
-      Services TOR 1[icon: switch, label: Services ToR]
-      Datacenter A Firewall_1 [label: Firewall, icon: firewall]
-    }
+
+  Production Environment [icon: network, color: yellow] {
+      Production Switch [icon: switch, label: Access]
+      Production Servers [icon: server, label: Server]
+      Production Switch 1[icon: switch, label: Access]
+      Production Servers 1[icon: server, label: Server]
+      Production Switch 2[icon: switch, label: Access]
+      Production Servers 2[icon: server, label: Server]
+      Production Switch 3[icon: switch, label: Access]
+      Production Servers 3[icon: server, label: Server]
+      Production Switch 4[icon: switch, label: Access]
+      Production Servers 4[icon: server, label: Server]
   }
-  
 }
-
-//Connections
-DC1 Spine 1 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
-DC1 Spine 2 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
-DC1 Spine 3 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
-DC1 Spine 4 <> Production TOR, Production TOR 1, Services TOR 1, Recovery Spine, Recovery Spine_1
-Recovery Spine <> Services Recovery TOR 1, Recovery TOR 
-Recovery Spine_1 <> Services Recovery TOR 1, Recovery TOR 
-
+//Connections 
+//DC1 Spine 1 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
+//DC1 Spine 2 > DC1 Distro 1, DC1 Distro 2, DC1 Isolation Firewall, DC1 Isolation Firewall_1
