@@ -13,6 +13,12 @@ Encryption is required.
 Encrypting our WAN connectivity helps decrease the likelihood that an adversary can look at our traffic.
 
 ## **References**
+Links to Industry standards/requirements
+
+Links to vendor documentation
+
+Links to internal designs/diagrams
+
 
 
 
