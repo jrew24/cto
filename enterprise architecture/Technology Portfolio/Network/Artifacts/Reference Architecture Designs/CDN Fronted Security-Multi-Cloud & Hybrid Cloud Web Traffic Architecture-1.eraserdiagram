@@ -1,0 +1,96 @@
+cloud-architecture-diagram
+
+title Multi-Cloud & Hybrid Cloud Web Traffic Architecture
+direction down
+// Top-level nodes
+External Users [icon: users,label: External Users]
+External Users_1 [icon: users,label: External Users]
+External Users_2 [icon: users,label: External Users]
+External Users_3 [icon: users,label: External Users]
+External Users_4 [icon: users,label: External Users]
+External Users_5 [icon: users,label: External Users]
+External Users_6 [icon: users,label: External Users]
+External Users_7 [icon: users,label: External Users]
+External Users_8 [icon: users,label: External Users]
+
+
+// CDN Layer
+Content Delivery Network [icon: cloud]{
+  Edge{
+    DDoS Protection
+    Bot Detection and Mitigation
+    Web Application Firewall
+  }
+  Backside{
+    SiteShield
+  }
+}
+Edge > Backside: [color: green]
+
+
+
+// Public Cloud Providers group
+Public Clouds [icon: cloud, color: blue] {
+  AWS [icon: aws-cloud] {
+    AWS Region 1 [icon: aws-region, label: "Region 1"] {
+      AWS App Endpoint 1 [icon: aws-ec2, label: "App Endpoint"]
+    }
+    AWS Region 2 [icon: aws-region, label: "Region 2"] {
+      AWS App Endpoint 2 [icon: aws-ec2, label: "App Endpoint"]
+    }
+  }
+  Azure [icon: azure-cloud] {
+    Azure Region 1 [icon: azure-region, label: "Region 1"] {
+      Azure App Endpoint 1 [icon: azure-app-service, label: "App Endpoint"]
+    }
+    Azure Region 2 [icon: azure-region, label: "Region 2"] {
+      Azure App Endpoint 2 [icon: azure-app-service, label: "App Endpoint"]
+    }
+  }
+  GCP [icon: gcp-cloud] {
+    GCP Region 1 [icon: gcp-region, label: "Region 1"] {
+      GCP App Endpoint 1 [icon: gcp-app-engine, label: "App Endpoint"]
+    }
+    GCP Region 2 [icon: gcp-region, label: "Region 2"] {
+      GCP App Endpoint 2 [icon: gcp-app-engine, label: "App Endpoint"]
+    }
+  }
+}
+
+// Private Cloud / Colocation Facilities group
+Colocation Facilities [icon: server, color: orange] {
+  Colocation Site 1 [icon: building, label: "Site 1"] {
+    Colocation App Endpoint 1 [icon: server, label: "App Endpoint"]
+  }
+  Colocation Site 2 [icon: building, label: "Site 2"] {
+    Colocation App Endpoint 2 [icon: server, label: "App Endpoint"]
+  }
+}
+
+// Network Security Layers (standalone nodes for visual reference)
+
+// Connections
+External Users > Content Delivery Network: web traffic
+External Users_1 > Content Delivery Network: web traffic
+External Users_2 > Content Delivery Network: web traffic
+External Users_3 > Content Delivery Network: web traffic
+External Users_4 > Content Delivery Network: web traffic
+External Users_5 > Content Delivery Network: web traffic
+External Users_6 > Content Delivery Network: web traffic
+External Users_7 > Content Delivery Network: web traffic
+External Users_8 > Content Delivery Network: web traffic
+
+// CDN to Public Clouds (per region, with security overlays)
+Content Delivery Network > AWS App Endpoint 1: mTLS, ACLs [color: green]
+Content Delivery Network > AWS App Endpoint 2: mTLS, ACLs [color: green]
+Content Delivery Network > Azure App Endpoint 1: mTLS, ACLs [color: green]
+Content Delivery Network > Azure App Endpoint 2: mTLS, ACLs [color: green]
+Content Delivery Network > GCP App Endpoint 1: mTLS, ACLs [color: green]
+Content Delivery Network > GCP App Endpoint 2: mTLS, ACLs [color: green]
+
+// CDN to Colocation Facilities (secured connectivity)
+Content Delivery Network > Colocation App Endpoint 1: mTLS, ACLs [color: orange]
+Content Delivery Network > Colocation App Endpoint 2: mTLS, ACLs [color: orange]
+
+// Security boundaries (visual reference, not direct connections)
+
