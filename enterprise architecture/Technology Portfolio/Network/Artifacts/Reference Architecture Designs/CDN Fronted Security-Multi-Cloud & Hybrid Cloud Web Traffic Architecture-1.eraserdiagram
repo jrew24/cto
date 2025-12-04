@@ -17,16 +17,17 @@ External Users_8 [icon: users,label: External Users]
 // CDN Layer
 Content Delivery Network [icon: cloud]{
   Edge Security[icon: lock]{
-    DDoS Protection
-    Bot Detection and Mitigation
-    Web Application Firewall
+    DDoS Protection [icon: traffic]
+    Bot Detection and Mitigation [icon: robot]
+    Web Application Firewall[icon: firewall]
   }
   Edge Infrastructure{
-    Caching
+    Caching [icon: cache]
     
   }
   Backside{
-    SiteShield
+    SiteShield [icon: shield]
+    GTM [icon: dns]
   }
 }
 Edge Security > Edge Infrastructure: [color: green] 
