@@ -35,7 +35,7 @@
 <!-- eraser-additional-content -->
 ## Diagrams
 <!-- eraser-additional-files -->
-<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/CDN Fronted Security-Multi-Cloud & Hybrid Cloud Web Traffic Architecture-1.eraserdiagram" data-element-id="joGIAcmbnrWflsZjt-HA_"><img src="/.eraser/9wP5o04XNkopIHCJbkNl___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----ac7dc42b5647fae241828fbcf84ce7eb-Multi-Cloud---Hybrid-Cloud-Web-Traffic-Architecture.png" alt="" data-element-id="joGIAcmbnrWflsZjt-HA_" /></a>
+<a href="/enterprise architecture/Technology Portfolio/Network/Artifacts/Reference Architecture Designs/CDN Fronted Security-Multi-Cloud & Hybrid Cloud Web Traffic Architecture-1.eraserdiagram" data-element-id="joGIAcmbnrWflsZjt-HA_"><img src="/.eraser/9wP5o04XNkopIHCJbkNl___Auxmsx4R82UQEGCqMRLq2WgcK833___---diagram----184d01aea201ca98de77838717f319db-Multi-Cloud---Hybrid-Cloud-Web-Traffic-Architecture.png" alt="" data-element-id="joGIAcmbnrWflsZjt-HA_" /></a>
 <!-- end-eraser-additional-files -->
 <!-- end-eraser-additional-content -->
 <!--- Eraser file: https://app.eraser.io/workspace/9wP5o04XNkopIHCJbkNl --->

@@ -20,14 +20,20 @@ Content Delivery Network [icon: cloud]{
     DDoS Protection [icon: traffic]
     Bot Detection and Mitigation [icon: robot]
     Web Application Firewall[icon: firewall]
+    TLS Termination [icon: certificate]
+    Post Quantum Crypto Support [icon: lock]
   }
   Edge Infrastructure{
     Caching [icon: cache]
-    
+    Image Optimization [icon: image]
+    Edge Application Routing [icon: router]
+    Edge Compute[icon: server]
   }
   Backside{
     SiteShield [icon: shield]
     GTM [icon: dns]
+    Real-Time Logs [icon: log]
+    Real User Monitoring [icon: graph]
   }
 }
 Edge Security > Edge Infrastructure: [color: green] 
